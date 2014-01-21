@@ -11,10 +11,27 @@
 @import "components/typography"
 @import "components/buttons"
 @import "components/inputs"
+@import "components/textarea"
+@import "components/radio"
+@import "components/checkbox"
+@import "components/select"
+@import "components/navigation"
+@import "components/pagination"
+@import "components/tables"
+@import "components/flashes"
 
 /*-----------------------------------------------------------------
 /* UI Library manifest with semantic class naming
 /*-----------------------------------------------------------------
+
+/*--------------------------------------
+/*  [ Navigations ]
+/*---------------------------------------
+.navigation
+  +navigation
+
+.pagination
+  +pagination
 
 /*--------------------------------------
 /*  [ Buttons ]
@@ -38,3 +55,39 @@ input[type='password'],
 input[type='email'], 
 input[type='search']
   +input
+
+textarea
+  +textarea
+
+/*--------------------------------------
+/*  [ Radio and Checkboxes ]
+/*---------------------------------------
+input[type=radio]
+  +radio
+
+input[type=checkbox]
+  +checkbox
+
+/*--------------------------------------
+/*  [ Select ]
+/*---------------------------------------
+select
+  +select
+
+/*--------------------------------------
+/*  [ Tables ]
+/*---------------------------------------
+.table
+  +table
+
+/*--------------------------------------
+/*  [ Flash messages ]
+/*---------------------------------------
+.flash
+  +flash
+  &.warning
+    +flash-skin(#f3a641)
+  &.success
+    +flash-skin(#aece4e)
+  &.error
+    +flash-skin(#e77755)
