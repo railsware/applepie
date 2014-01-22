@@ -1,0 +1,19 @@
+{
+  "name": "applepie",
+  "version": "0.1.0",
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:alchapone/applepie.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/alchapone/applepie/issues",
+    "email" : "alchapone@yandex.ru"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-watch": "~0.5.2",
+    "load-grunt-tasks": "~0.1.0"
+  }
+}
