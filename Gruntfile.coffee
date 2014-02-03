@@ -17,8 +17,9 @@ module.exports = (grunt) =>
       minify: 
         expand: true
         cwd: 'dist/stylesheets/'
-        src: ['*.css']
+        src: ['*.css', '!*.min.css']
         dest: 'dist/stylesheets/'
+        ext: '.min.css'
         
   grunt.registerTask "build", ["sass:dist", "cssmin"]
         
