@@ -362,7 +362,7 @@ html {
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: 0.875rem;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #555555; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -443,7 +443,7 @@ ul, ol {
     zoom: 1;
     _overflow: hidden;
     *display: inline;
-    font-size: 0.875rem; }
+    font-size: 0.9375rem; }
     .navigation li a {
       display: -moz-inline-stack;
       display: inline-block;
@@ -456,7 +456,7 @@ ul, ol {
       -moz-transition: color 0.3s;
       -o-transition: color 0.3s;
       transition: color 0.3s; }
-      .navigation li a:hover {
+      .navigation li a:hover, .navigation li a.current {
         color: black; }
 
 .pagination {
@@ -518,6 +518,14 @@ ul, ol {
       -moz-box-shadow: inset 0 -3px 0 0 #76b6ec;
       -o-box-shadow: inset 0 -3px 0 0 #76b6ec;
       box-shadow: inset 0 -3px 0 0 #76b6ec; }
+
+/*-------------------------------------- */
+/* [Labels] */
+/*-------------------------------------- */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold; }
 
 /*-------------------------------------- */
 /*  [ Buttons ] */
@@ -743,26 +751,20 @@ select {
 /*--------------------------------------- */
 .flash {
   position: relative;
-  padding: 20px;
+  padding: 15px 20px;
   background: white;
   color: #999999;
   border: 1px solid #a5c8e5;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px; }
-  .flash h1 {
-    margin: 0;
-    font-size: 1rem;
-    color: #a5c8e5; }
+  border-radius: 3px;
+  color: #a5c8e5; }
   .flash.warning {
-    border-color: #f3a641; }
-    .flash.warning h1 {
-      color: #f3a641; }
+    border-color: #f3a641;
+    color: #f3a641; }
   .flash.success {
-    border-color: #aece4e; }
-    .flash.success h1 {
-      color: #aece4e; }
+    border-color: #aece4e;
+    color: #aece4e; }
   .flash.error {
-    border-color: #e77755; }
-    .flash.error h1 {
-      color: #e77755; }
+    border-color: #e77755;
+    color: #e77755; }
