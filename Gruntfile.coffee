@@ -2,6 +2,14 @@ module.exports = (grunt) =>
   require('load-grunt-tasks')(grunt)
 
   grunt.initConfig
+    copy:
+      dist:
+        files: [
+          expand: true
+          cwd: 'src/fonts/'
+          src: '**'
+          dest: 'dist/fonts/'
+        ]
     sass:
       dev:
         files: 
@@ -21,5 +29,5 @@ module.exports = (grunt) =>
         dest: 'dist/stylesheets/'
         ext: '.min.css'
         
-  grunt.registerTask "build", ["sass:dist", "cssmin"]
+  grunt.registerTask "build", ["sass:dist", "cssmin", "copy:dist"]
         

@@ -1,12 +1,12 @@
 {
   "name": "applepie",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/alchapone/applepie",
   "authors": [
     "Alex Chaplinsky <alchapone@yandex.ru>"
   ],
   "description": "Semantic and modular CSS toolkit",
-  "main": "dist/applepie.css",
+  "main": "dist/stylesheets/applepie.css",
   "keywords": [
     "css",
     "oocss",
