@@ -60,4 +60,4 @@ module.exports = (grunt) =>
         files: 'src/**/*.sass'
         tasks: ['sass:dev']
 
-  grunt.registerTask "build", ["sass:dist", "cssmin", "usebanner:dist", "copy:dist", "compress"]
+  grunt.registerTask "build", ["sass:dist", "cssmin",  "copy:dist", "usebanner:dist", "compress"]

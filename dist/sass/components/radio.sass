@@ -1,0 +1,29 @@
+=radio
+  display: none
+  + label
+    display: inline-block
+    cursor: pointer
+    position: relative
+    padding-left: 25px
+    margin-right: 15px
+    font-size: 13px
+    &:before
+      position: absolute
+      left: 0
+      bottom: 1px
+      display: inline-block
+      content: ""
+      width: 16px
+      height: 16px
+      margin-right: 5px
+      border: 1px solid #e0e0e0
+      background-color: #fafafa
+      +box-sizing
+      +border-radius(8px)
+  &:checked + label:before
+    font-family: Arial
+    content: "\2022"
+    color: #bbb
+    font-size: 22px
+    text-align: center
+    line-height: 16px

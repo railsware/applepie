@@ -1,0 +1,23 @@
+/*------------------------------------------------------------------
+/*  [ Button Structure ]
+/*------------------------------------------------------------------
+=button($background: #76b6ec, $color: #fff)
+  display: inline-block
+  padding: 6px 12px
+  line-height: 1.3125rem
+  border: none
+  cursor: pointer
+  +border-radius(3px)
+  +button-skin($background, $color)
+
+/*------------------------------------------------------------------
+/*  [ Button Skin ]
+/*------------------------------------------------------------------
+=button-skin($background, $color)
+  color: $color
+  background-color: $background
+  &:hover
+    color: $color
+    background: darken($background, 5%)
+  &:active
+    background: darken($background, 10%)

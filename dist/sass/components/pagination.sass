@@ -1,0 +1,21 @@
+=pagination
+  +inline-block
+  list-style: none
+  font-size: 0
+  border: 1px solid #eee
+  li
+    +inline-block
+    font-size: 0.875rem
+    a
+      display: block
+      color: #999
+      padding: 5px 10px
+      +transition(color .3s)
+      &:hover
+        color: #555
+    &.current a
+      +box-shadow(inset 0 3px 0 0 #76b6ec)
+    &.prev a
+      border-right: 1px solid #eee
+    &.next a
+      border-left: 1px solid #eee
