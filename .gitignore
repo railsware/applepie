@@ -1,4 +1,5 @@
 .DS_Store
 .sass-cache
 development
+package
 node_modules
