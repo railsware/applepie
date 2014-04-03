@@ -8,26 +8,25 @@ module.exports = (grunt) =>
           expand: true
           cwd: 'src/fonts/'
           src: '**'
-          dest: 'dist/fonts/'
+          dest: 'build/applepie/fonts/'
         ]
     sass:
       dev:
-        files: 
+        files:
           'development/stylesheets/applepie.css': 'src/stylesheets/applepie.sass'
       dist:
         files:
-          'dist/stylesheets/applepie.css': 'src/stylesheets/applepie.sass'
+          'build/applepie/css/applepie.css': 'src/stylesheets/applepie.sass'
     watch:
-      css: 
+      css:
         files: 'src/**/*.sass'
         tasks: ['sass:dev']
     cssmin:
-      minify: 
+      minify:
         expand: true
-        cwd: 'dist/stylesheets/'
+        cwd: 'build/applepie/css/'
         src: ['*.css', '!*.min.css']
-        dest: 'dist/stylesheets/'
+        dest: 'build/applepie/css/'
         ext: '.min.css'
-        
+
   grunt.registerTask "build", ["sass:dist", "cssmin", "copy:dist"]
-        
