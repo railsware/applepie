@@ -1,31 +1,13 @@
-/*----------------------------------------------------------------
-/* Linking all pie components together
-/*----------------------------------------------------------------
-@import "base/normalize"
-@import "base/grid"
-@import "base/spaces"
-@import "base/helpers"
-
-@import "mixins/css3"
-
-@import "components/icons"
-@import "components/typography"
-@import "components/labels"
-@import "components/buttons"
-@import "components/inputs"
-@import "components/textarea"
-@import "components/radio"
-@import "components/checkbox"
-@import "components/select"
-@import "components/navbar"
-@import "components/navigation"
-@import "components/pagination"
-@import "components/tabs"
-@import "components/tables"
-@import "components/flashes"
-
 /*-----------------------------------------------------------------
-/* UI Library manifest with semantic class naming
+/*  [ Stylesheet Manifest ]
+/*
+/*  Project: ApplePie
+/*  Version: 0.1.0-rc.1
+/*
+/*  Defines all components names and uses ApplePie mixins for default styling.
+/*  If you want to modify styling of elements consider configuring manifest by using
+/*  another mixins library for components or by wtiting custom css for existing selectors.
+/*
 /*-----------------------------------------------------------------
 
 /*--------------------------------------
@@ -39,10 +21,10 @@
 
 .pagination
   +pagination
-  
+
 .tabs
   +tabs
-  
+
 /*--------------------------------------
 /* [Labels]
 /*--------------------------------------
@@ -66,9 +48,9 @@ label
 /*--------------------------------------
 /*  [ Text Inputs ]
 /*---------------------------------------
-input[type='text'], 
-input[type='password'], 
-input[type='email'], 
+input[type='text'],
+input[type='password'],
+input[type='email'],
 input[type='search']
   +input
 
