@@ -1,32 +1,56 @@
 ## [ApplePie](http://apppie.org)
-ApplePie consists of two pieces theoretical knowledge base and practical tool - CSS framework. Basically it is a set of conventions on codestyle, naming and code organization that bring standards into front-end development.
 
 ApplePie Toolkit is modular and responsive CSS framework. Getting started with ApplePie is easy. Whether you are building a simple   site with a 'default' UI, or you are a master of SASS, building a new app - this toolkit will help you get up and running!
 
-### Getting Started
-Simplest way to get started - straight CSS Toolkit version that includes everything you need to do rapid prototyping. Just grab a CSS file (applepie.css or applepie.min.css), include it to a web page and start doing markup without additional efforts on styling elements. Checkout [latest releases](https://github.com/alchapone/applepie/releases) to get started. 
+## Getting Started
 
-### Installing with Bower
-If you haven't installed Bower previously
+### CSS Version
+Simplest way to get started - straight CSS Toolkit version that includes everything you need to do rapid prototyping. Just grab a CSS file (applepie.css or applepie.min.css), include it to a web page and start doing markup without additional efforts on styling elements. Checkout [latest releases](https://github.com/alchapone/applepie/releases) to get started.
 
-``` npm install -g bower ```
+### SASS Version
+You'll need [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) to install it.
 
-Then 
+#### Bower
 
-``` bower install applepie ```
+```
+  npm install -g bower
+  bower install applepie
 
-Navigate to builds directory and use one of available version - CSS package or SASS components.
+```
 
-      
-Read more at [apppie.org](http://apppie.org/pages/toolkit/getting_started.html)
 
-### Usage
-There's two ways of using ApplePie Toolkit:
+#### Git
 
-* SASS components
+```
+  git clone git@github.com:railsware/applepie.git
+  cd applepie
+  npm install -g grunt-cli   # if you haven't install grunt previously
+  npm install
+  grunt build
 
-  If you're using SASS, you can include needed modules and components individualy.
+```
 
-* CSS build
+#### Usage
+All ApplePie SASS files should now be built into the ```dist/sass/``` directory. What you've
+got here:
 
- Grab generated applepie.css and build interfasw with ApplePie CSS framework.
+```base/```: folder that contains all base layer styles like ```normalize.css```, ```grids.css``` etc.
+
+```mixins/```: contains all kinds of mixins that can be handy during development, like CSS3 mixins for
+dealing wit vendor prefixes, or responsive mixins for media queries.
+
+```components/```: is a folder that contains all UI components implemented also using SASS mixins.
+You can use this default implementation of UI elements just by including components into your
+main SASS file and using mixins inside selectors.
+
+```layout/```: layouts styles. [WIP]
+
+```all.sass```: linking all pie components together. If you want to use all ApplePie components -
+just include all.sass to your stylesheets.
+
+```manifest.sass```: this is sample applepie manifest, which has all selectors in place with use of components mixins.
+If you want to feel all power of ApplePie's naming convention and want to use all benefits of
+standardized naming, use ```manifest.sass``` as your main sass manifest file. Just copy this file to your
+stylesheets folder, include applepie's ```all.sass``` file at the top and you are ready to roll!
+
+Find out more at [apppie.org](http://apppie.org/pages/toolkit/getting_started.html)
