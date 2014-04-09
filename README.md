@@ -15,7 +15,6 @@ You'll need [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) to inst
 ```
   npm install -g bower
   bower install applepie
-
 ```
 
 
@@ -27,7 +26,6 @@ You'll need [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) to inst
   npm install -g grunt-cli   # if you haven't install grunt previously
   npm install
   grunt build
-
 ```
 
 #### Usage
@@ -54,3 +52,7 @@ standardized naming, use ```manifest.sass``` as your main sass manifest file. Ju
 stylesheets folder, include applepie's ```all.sass``` file at the top and you are ready to roll!
 
 Find out more at [apppie.org](http://apppie.org/pages/toolkit/getting_started.html)
+
+### Contributing
+
+See the [CONTRIBUTING](https://github.com/railsware/applepie/blob/master/CONTRIBUTING.md) file for information on how to contribute to ApplePie Toolkit
