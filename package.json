@@ -5,15 +5,15 @@
   "author": "Railsware, Alex Chaplinsky",
   "repository": {
     "type" : "git",
-    "url" : "git@github.com:alchapone/applepie.git"
+    "url" : "git@github.com:railsware/applepie.git"
   },
   "bugs": {
-    "url" : "https://github.com/alchapone/applepie/issues",
+    "url" : "https://github.com/railsware/applepie/issues",
     "email" : "alchapone@yandex.ru"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/alchapone/applepie/blob/master/LICENSE"
+    "url": "https://github.com/railsware/applepie/blob/master/LICENSE"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
