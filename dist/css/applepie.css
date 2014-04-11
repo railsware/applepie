@@ -1,13 +1,12 @@
 /*!
  * ApplePie v0.1.0-rc.1 (http://apppie.org)
  * Copyright 2014 Railsware, Alex Chaplinsky
- * Licensed under MIT (https://github.com/alchapone/applepie/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/railsware/applepie/blob/master/LICENSE)
  */
 
 /*---------------------------------------------------------------- */
 /* Linking all pie components together */
 /*---------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic);
 article,
 aside,
 details,
@@ -1259,7 +1258,6 @@ table {
   content: "\e78f"; }
 
 /*---------------------------------------------------------------- */
-/*  [ Typography and Colors ] */
 /* */
 /*  Project: ApplePie */
 /*  Version: 0.1.0 */
@@ -1270,7 +1268,7 @@ html {
   font-size: 1em; }
 
 body {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Verdana", sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   color: #555555; }
