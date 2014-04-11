@@ -1268,8 +1268,8 @@ html {
   font-size: 1em; }
 
 body {
-  font-family: "Verdana", sans-serif;
-  font-size: 0.875rem;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.8125rem;
   line-height: 1.5;
   color: #555555; }
 
@@ -1343,49 +1343,31 @@ ul, ol {
   margin-left: 0;
   padding-left: 0; }
   .navigation li {
-    display: -moz-inline-stack;
     display: inline-block;
-    zoom: 1;
-    _overflow: hidden;
-    *display: inline;
     font-size: 0.9375rem; }
     .navigation li a {
-      display: -moz-inline-stack;
       display: inline-block;
-      zoom: 1;
-      _overflow: hidden;
-      *display: inline;
       color: #777777;
       padding: 15px 20px;
       -webkit-transition: color 0.3s;
-      -moz-transition: color 0.3s;
       -o-transition: color 0.3s;
       transition: color 0.3s; }
       .navigation li a:hover, .navigation li a.current {
         color: black; }
 
 .pagination {
-  display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
-  _overflow: hidden;
-  *display: inline;
   list-style: none;
   font-size: 0;
   border: 1px solid #eeeeee; }
   .pagination li {
-    display: -moz-inline-stack;
     display: inline-block;
-    zoom: 1;
-    _overflow: hidden;
-    *display: inline;
     font-size: 0.875rem; }
     .pagination li a {
       display: block;
       color: #999999;
       padding: 5px 10px;
       -webkit-transition: color 0.3s;
-      -moz-transition: color 0.3s;
       -o-transition: color 0.3s;
       transition: color 0.3s; }
       .pagination li a:hover {
@@ -1404,11 +1386,7 @@ ul, ol {
   list-style: none;
   font-size: 0; }
   .tabs li {
-    display: -moz-inline-stack;
     display: inline-block;
-    zoom: 1;
-    _overflow: hidden;
-    *display: inline;
     font-size: 0.875rem; }
     .tabs li a {
       display: block;
@@ -1504,19 +1482,28 @@ input[type='search'] {
   -moz-border-radius: 3px;
   border-radius: 3px;
   -webkit-transition: border-color 0.5s ease;
-  -moz-transition: border-color 0.5s ease;
   -o-transition: border-color 0.5s ease;
   transition: border-color 0.5s ease;
   line-height: 1.3125rem; }
+  input[type='text']::-webkit-input-placeholder,
+  input[type='password']::-webkit-input-placeholder,
+  input[type='email']::-webkit-input-placeholder,
+  input[type='search']::-webkit-input-placeholder {
+    color: #cccccc; }
   input[type='text']:-moz-placeholder,
   input[type='password']:-moz-placeholder,
   input[type='email']:-moz-placeholder,
   input[type='search']:-moz-placeholder {
     color: #cccccc; }
-  input[type='text']::-webkit-input-placeholder,
-  input[type='password']::-webkit-input-placeholder,
-  input[type='email']::-webkit-input-placeholder,
-  input[type='search']::-webkit-input-placeholder {
+  input[type='text']::-moz-placeholder,
+  input[type='password']::-moz-placeholder,
+  input[type='email']::-moz-placeholder,
+  input[type='search']::-moz-placeholder {
+    color: #cccccc; }
+  input[type='text']:-ms-input-placeholder,
+  input[type='password']:-ms-input-placeholder,
+  input[type='email']:-ms-input-placeholder,
+  input[type='search']:-ms-input-placeholder {
     color: #cccccc; }
   input[type='text']:focus,
   input[type='password']:focus,
@@ -1538,7 +1525,6 @@ textarea {
   -moz-border-radius: 3px;
   border-radius: 3px;
   -webkit-transition: border-color 0.5s ease;
-  -moz-transition: border-color 0.5s ease;
   -o-transition: border-color 0.5s ease;
   transition: border-color 0.5s ease; }
   textarea:focus {

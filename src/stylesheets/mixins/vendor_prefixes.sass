@@ -1,0 +1,103 @@
+=animation($properties)
+  -webkit-animation: $properties
+  -o-animation: $properties
+  animation: $properties
+
+=border-radius($properties)
+  -webkit-border-radius: $properties
+  -moz-border-radius: $properties
+  border-radius: $properties
+
+=box-shadow($properties)
+  -webkit-box-shadow: $properties
+  -moz-box-shadow: $properties
+  -o-box-shadow: $properties
+  box-shadow: $properties
+
+=box-sizing($property: border-box)
+  -webkit-box-sizing: $property
+  -moz-box-sizing: $property
+  box-sizing: $property
+
+=opacity($opacity: 1)
+  opacity: $opacity
+  filter: alpha(opacity=$opacity * 100)
+
+=placeholder-color($color)
+  &::-webkit-input-placeholder
+    color: $color
+  &:-moz-placeholder
+    color: $color
+  &::-moz-placeholder
+    color: $color
+  &:-ms-input-placeholder
+    color: $color
+
+=rotate($degrees)
+  -webkit-transform: rotate(#{$degrees}deg)
+  -moz-transform: rotate(#{$degrees}deg)
+  -ms-transform: rotate(#{$degrees}deg)
+  -o-transform: rotate(#{$degrees}deg)
+  transform: rotate(#{$degrees}deg)
+
+=scale($ratio)
+  -webkit-transform: scale($ratio)
+  -ms-transform: scale($ratio)
+  -o-transform: scale($ratio)
+  transform: scale($ratio)
+
+=skew($x: 0, $y: 0)
+  -webkit-transform: skew($x, $y)
+  -ms-transform: skew($x, $y)
+  -o-transform: skew($x, $y)
+  transform: skew($x, $y)
+
+=text-shadow($properties)
+  -webkit-text-shadow: $properties
+  -moz-text-shadow: $properties
+  text-shadow: $properties
+
+=translate($x: 0, $y: 0)
+  -webkit-transform: translate($x, $y)
+  -ms-transform: translate($x, $y)
+  -o-transform: translate($x, $y)
+  transform: translate($x, $y)
+
+=translate3d($x: 0, $y: 0, $z: 0)
+  -webkit-transform: translate3d($x, $y, $z)
+  transform: translate3d($x, $y, $z)
+
+=transition($properties)
+  -webkit-transition: $properties
+  -o-transition: $properties
+  transition: $properties
+
+=user-select($properties: none)
+  -webkit-user-select: $properties
+  -moz-user-select: $properties
+  -ms-user-select: $properties
+  user-select: $properties
+
+=vertical-gradient($from, $to)
+  background: $to
+  background-image: -webkit-linear-gradient(top, $from, $to)
+  background-image: -moz-linear-gradient(top, $from, $to)
+  background-image: -ms-linear-gradient(top, $from, $to)
+  background-image: -o-linear-gradient(top, $from, $to)
+  background-image: linear-gradient(to bottom, $from, $to)
+
+=horizontal-gradient($from, $to)
+  background: $to
+  background-image: -webkit-linear-gradient(left, $from, $to)
+  background-image: -moz-linear-gradient(left, $from, $to)
+  background-image: -ms-linear-gradient(left, $from, $to)
+  background-image: -o-linear-gradient(left, $from, $to)
+  background-image: linear-gradient(to right, $from, $to)
+
+=directional-gradient($from, $to, $deg)
+  background-color: $to
+  background-image: -moz-linear-gradient($deg, $from, $to)
+  background-image: -ms-linear-gradient($deg, $from, $to)
+  background-image: -webkit-linear-gradient($deg, $from, $to)
+  background-image: -o-linear-gradient($deg, $from, $to)
+  background-image: linear-gradient($deg+180, $from, $to)

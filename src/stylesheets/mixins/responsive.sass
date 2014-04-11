@@ -1,0 +1,36 @@
+$break-small: 480px
+$break-medium: 768px
+$break-large: 980px
+$break-x-large: 1200px
+
+=screen($size)
+  @if $size == big-phone-up
+    @media only screen and (min-width: $break-small)
+      @content
+  @if $size == tablet-up
+    @media only screen and (min-width: $break-medium)
+      @content
+  @else if $size == desktop-up
+    @media only screen and (min-width: $break-large)
+      @content
+  @else if $size == big-desktop
+    @media only screen and (min-width: $break-x-large)
+      @content
+  @else if $size == phone-only
+    @media only screen and (max-width: $break-medium - 1)
+      @content
+  @else if $size == small-phone-only
+    @media only screen and (max-width: $break-small - 1)
+      @content
+  @else if $size == big-phone-only
+    @media only screen and (min-width: $break-small) and (max-width: $break-medium - 1)
+      @content
+  @else if $size == tablet-only
+    @media only screen and (min-width: $break-medium) and (max-width: $break-large - 1)
+      @content
+  @else if $size == desktop-only
+    @media only screen and (min-width: $break-large) and (max-width: $break-x-large - 1)
+      @content
+  @else if $size == print
+    @media print
+      @content
