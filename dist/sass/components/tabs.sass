@@ -1,16 +1,26 @@
 =tabs
   list-style: none
   font-size: 0
+  margin: 0
+  background: #f0f2f5
+  border-bottom: 1px solid #e5e5e5
   li
     display: inline-block
     font-size: 0.875rem
-    a
+    a, span
       display: block
       padding: 10px 15px
-      color: #999
-      text-transform: uppercase
-      &:hover
-        color: #555
-    &.current a
       color: #555
-      +box-shadow(inset 0 -3px 0 0 #76b6ec)
+      &:hover
+        background: rgb(247,247,247)
+      &.active
+        +border-radius(3px 3px 0 0)
+        background: #fff
+        color: #555
+        border: 1px solid #e5e5e5
+        border-bottom: 1px solid #fff
+        margin-bottom: -1px
+      &.disabled
+        background: transparent
+        cursor: default
+        color: #999
