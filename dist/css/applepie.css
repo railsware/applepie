@@ -1631,6 +1631,7 @@ label {
   display: inline-block;
   padding: 6px 12px;
   line-height: 1.3125rem;
+  -webkit-font-smoothing: antialiased;
   border: none;
   cursor: pointer;
   -webkit-border-radius: 3px;
@@ -1693,6 +1694,7 @@ input[type='search'] {
   border: 1px solid #e0e0e0;
   background: white;
   color: #555555;
+  outline: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1736,6 +1738,7 @@ textarea {
   border: 1px solid #e0e0e0;
   background: white;
   color: #555555;
+  outline: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
