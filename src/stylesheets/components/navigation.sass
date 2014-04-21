@@ -9,7 +9,9 @@
     a
       display: inline-block
       color: #777
-      padding: 15px 20px
+      padding: 10px 20px
       +transition(color .3s)
-      &:hover, &.current
+      &:hover, &.active
         color: #000
+      &.active
+        background: rgba(250, 250, 250, 1)

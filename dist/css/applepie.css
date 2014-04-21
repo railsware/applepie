@@ -1543,59 +1543,78 @@ ul, ol {
     .navigation li a {
       display: inline-block;
       color: #777777;
-      padding: 15px 20px;
+      padding: 10px 20px;
       -webkit-transition: color 0.3s;
       -o-transition: color 0.3s;
       transition: color 0.3s; }
-      .navigation li a:hover, .navigation li a.current {
+      .navigation li a:hover, .navigation li a.active {
         color: black; }
+      .navigation li a.active {
+        background: #fafafa; }
 
 .pagination {
   display: inline-block;
   list-style: none;
-  font-size: 0;
-  border: 1px solid #eeeeee; }
+  margin: 0;
+  font-size: 0; }
   .pagination li {
     display: inline-block;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    min-width: 30px;
+    text-align: center; }
     .pagination li a {
       display: block;
-      color: #999999;
       padding: 5px 10px;
-      -webkit-transition: color 0.3s;
-      -o-transition: color 0.3s;
-      transition: color 0.3s; }
+      background: #f0f2f5;
+      color: #555555;
+      border-left: 1px solid white;
+      -webkit-transition: background 0.2s;
+      -o-transition: background 0.2s;
+      transition: background 0.2s; }
       .pagination li a:hover {
-        color: #555555; }
-    .pagination li.current a {
-      -webkit-box-shadow: inset 0 3px 0 0 #76b6ec;
-      -moz-box-shadow: inset 0 3px 0 0 #76b6ec;
-      -o-box-shadow: inset 0 3px 0 0 #76b6ec;
-      box-shadow: inset 0 3px 0 0 #76b6ec; }
+        background: #f7f7f7; }
+      .pagination li a.active {
+        background: #76b6ec;
+        cursor: default;
+        color: white; }
     .pagination li.prev a {
-      border-right: 1px solid #eeeeee; }
+      border-left: none;
+      -webkit-border-radius: 3px 0 0 3px;
+      -moz-border-radius: 3px 0 0 3px;
+      border-radius: 3px 0 0 3px; }
     .pagination li.next a {
-      border-left: 1px solid #eeeeee; }
+      -webkit-border-radius: 0 3px 3px 0;
+      -moz-border-radius: 0 3px 3px 0;
+      border-radius: 0 3px 3px 0; }
 
 .tabs {
   list-style: none;
-  font-size: 0; }
+  font-size: 0;
+  margin: 0;
+  background: #f0f2f5;
+  border-bottom: 1px solid #e5e5e5; }
   .tabs li {
     display: inline-block;
     font-size: 0.875rem; }
-    .tabs li a {
+    .tabs li a, .tabs li span {
       display: block;
       padding: 10px 15px;
-      color: #999999;
-      text-transform: uppercase; }
-      .tabs li a:hover {
-        color: #555555; }
-    .tabs li.current a {
-      color: #555555;
-      -webkit-box-shadow: inset 0 -3px 0 0 #76b6ec;
-      -moz-box-shadow: inset 0 -3px 0 0 #76b6ec;
-      -o-box-shadow: inset 0 -3px 0 0 #76b6ec;
-      box-shadow: inset 0 -3px 0 0 #76b6ec; }
+      color: #555555; }
+      .tabs li a:hover, .tabs li span:hover {
+        background: #f7f7f7; }
+      .tabs li a.active, .tabs li span.active {
+        -webkit-border-radius: 3px 3px 0 0;
+        -moz-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+        background: white;
+        color: #555555;
+        border: 1px solid #e5e5e5;
+        border-bottom: 1px solid white;
+        margin-bottom: -1px; }
+      .tabs li a.disabled, .tabs li span.disabled {
+        background: transparent;
+        cursor: default;
+        color: #999999; }
 
 /*-------------------------------------- */
 /* [Labels] */
@@ -1648,14 +1667,18 @@ label {
       background: #f3c037; }
     .button.warning:active {
       background: #f1b91f; }
+  .button.pale {
+    color: #555555;
+    background-color: #edebe8; }
+    .button.pale:hover {
+      color: #555555;
+      background: #e2dfda; }
+    .button.pale:active {
+      background: #d7d2cb; }
   .button.disabled {
+    cursor: default;
     color: white;
     background-color: #aaaaaa; }
-    .button.disabled:hover {
-      color: white;
-      background: #9d9d9d; }
-    .button.disabled:active {
-      background: #909090; }
 
 /*-------------------------------------- */
 /*  [ Text Inputs ] */
@@ -1816,19 +1839,19 @@ select {
 /*  [ Tables ] */
 /*--------------------------------------- */
 .table {
-  width: 100%; }
-  .table td, .table th {
-    border: 1px solid #eeeeee; }
+  width: 100%;
+  color: #7a7676; }
   .table td {
     padding: 10px 15px; }
   .table th {
     padding: 15px;
     background: white;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 2px solid #dddddd;
     font-weight: bold;
     text-align: left; }
   .table tr {
-    background: white; }
+    background: white;
+    border-bottom: 1px solid #dddddd; }
   .table tr:nth-child(odd) {
     background: #fbfbfb; }
 
