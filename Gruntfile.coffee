@@ -34,6 +34,8 @@ module.exports = (grunt) =>
           src: 'src/setup/manifest.sass'
           dest: 'dist/sass/manifest.sass'
         ]
+    clean:
+      dist: 'dist'
     sass:
       dev:
         files:
@@ -64,7 +66,7 @@ module.exports = (grunt) =>
         files: [
           expand: true
           cwd: 'dist/'
-          src: ['fonts/**', 'css/**']
+          src: ['fonts/**', 'css/**', 'sass/**']
         ]
     cssmin:
       minify:
@@ -78,4 +80,4 @@ module.exports = (grunt) =>
         files: 'src/**/*.sass'
         tasks: ['sass:dev']
 
-  grunt.registerTask "build", ["sass:dist", "cssmin",  "copy:dist", "usebanner:dist", "usebanner:manifest", "compress"]
+  grunt.registerTask "build", ["clean:dist", "sass:dist", "cssmin",  "copy:dist", "usebanner:dist", "usebanner:manifest", "compress"]
