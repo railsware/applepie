@@ -23,7 +23,7 @@ You'll need [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) to inst
 ```
   git clone git@github.com:railsware/applepie.git
   cd applepie
-  npm install -g grunt-cli   # if you haven't install grunt previously
+  npm install -g grunt-cli   # if you haven't installed grunt previously
   npm install
   grunt build
 ```
