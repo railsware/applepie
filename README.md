@@ -43,13 +43,13 @@ main SASS file and using mixins inside selectors.
 
 ```layout/```: layouts styles. [WIP]
 
-```all.sass```: linking all pie components together. If you want to use all ApplePie components -
-just include all.sass to your stylesheets.
+```applepie.sass```: linking all pie components together. If you want to use all ApplePie components -
+just include applepie.sass to your stylesheets.
 
 ```manifest.sass```: this is sample applepie manifest, which has all selectors in place with use of components mixins.
 If you want to feel all power of ApplePie's naming convention and want to use all benefits of
 standardized naming, use ```manifest.sass``` as your main sass manifest file. Just copy this file to your
-stylesheets folder, include applepie's ```all.sass``` file at the top and you are ready to roll!
+stylesheets folder, include ```applepie.sass``` file at the top and you are ready to roll!
 
 Find out more at [apppie.org](http://apppie.org/pages/toolkit/getting_started.html)
 
